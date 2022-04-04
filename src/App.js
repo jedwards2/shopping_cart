@@ -26,8 +26,6 @@ function App() {
     setItemsInShoppingCart(Object.keys(shoppingCart).length);
   }, [shoppingCart]);
 
-  console.log(shoppingCart);
-
   let cardElements = cardsInfo.map((cardObj) => {
     return (
       <Card

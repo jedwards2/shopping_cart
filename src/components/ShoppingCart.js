@@ -1,14 +1,11 @@
 import React from "react";
 
 function ShoppingCart(props) {
-  console.log(Object.values(props.shoppingCart));
   const price = Object.values(props.shoppingCart).reduce(
     (previousValue, currentValue) =>
       previousValue + currentValue[0] * parseFloat(currentValue[1]),
     0
   );
-
-  console.log(price);
 
   let itemsArray = [];
   for (let item in props.shoppingCart) {
