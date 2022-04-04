@@ -1,0 +1,4 @@
+.cardElements--div{
+  display: flex;
+  flex-wrap: wrap;
+}

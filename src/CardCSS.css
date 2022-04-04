@@ -1,0 +1,10 @@
+.card--div {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  background-color: gray;
+  border-radius: 25px;
+  align-items: center;
+  margin: 25px;
+}
