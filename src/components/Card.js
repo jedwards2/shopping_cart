@@ -32,8 +32,9 @@ function Card(props) {
 
   return (
     <div className="card--div">
-      <h1>{props.name}</h1>
-      <h3>$ {props.price}</h3>
+      <h3 className="card--header">{props.name}</h3>
+      <h4 className="card--price">$ {props.price}</h4>
+      <img src={props.image} alt="a bean" className="card--img"></img>
       <div className="input--div">
         <button type="button" onClick={() => handleButtonChange(num, "-")}>
           -

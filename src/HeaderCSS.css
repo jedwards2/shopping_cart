@@ -10,3 +10,17 @@
   flex-direction: row;
   gap: 15px;
 }
+
+button {
+  border-radius: 15px;
+  color: white;
+  background-color: gray;
+  box-shadow: none;
+  border: none;
+  border: white 1px solid
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 33%);
+  border: black solid 2px
+}

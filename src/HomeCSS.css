@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home--element{
+  height: 100vh;
+  background-image: url("./images/beans.jpeg");
+  background-size: cover;
+} 
+.header--home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(64, 64, 64, 0.4);
+  padding: 20px; 
+}
+
+.header--home a {
+  color: white;
+}
+
+.home--content {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}

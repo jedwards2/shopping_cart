@@ -3,8 +3,23 @@
   flex-direction: column;
   width: 250px;
   height: 250px;
-  background-color: gray;
+  background-color: rgba(64, 64, 64, 0.8);
   border-radius: 25px;
   align-items: center;
-  margin: 25px;
+  box-shadow: 5px 5px 3px rgba(64, 64, 64, 0.8);
+  color: white
+}
+
+.card--img {
+  width: 150px;
+  height: 150px;
+}
+
+.card--header {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.card--price {
+  margin: 0px;
 }

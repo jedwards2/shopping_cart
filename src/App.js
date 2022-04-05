@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import ShoppingCart from "./components/ShoppingCart";
 import Card from "./components/Card";
+
 import uniqid from "uniqid";
+
+import pinto from "./images/pinto.jpeg";
+import black from "./images/black.jpeg";
+import white from "./images/white.jpeg";
+import cannellini from "./images/cannellini.jpeg";
 import "./AppCSS.css";
 
 function App() {
@@ -11,14 +17,28 @@ function App() {
   let [shoppingCart, setShoppingCart] = React.useState({});
   let [cardsInfo, setCardsInfo] = React.useState([
     {
-      price: "32.99",
+      price: "0.99",
       name: "Black Bean",
       id: uniqid(),
+      image: black,
     },
     {
-      price: "45.99",
+      price: "0.98",
       name: "Pinto Bean",
       id: uniqid(),
+      image: pinto,
+    },
+    {
+      price: "0.49",
+      name: "White Bean",
+      id: uniqid(),
+      image: white,
+    },
+    {
+      price: "0.89",
+      name: "Cannellini Bean",
+      id: uniqid(),
+      image: cannellini,
     },
   ]);
 
@@ -32,6 +52,7 @@ function App() {
         price={cardObj.price}
         name={cardObj.name}
         key={cardObj.id}
+        image={cardObj.image}
         setShoppingCart={setShoppingCart}
         shoppingCart={shoppingCart}
       />
@@ -39,14 +60,19 @@ function App() {
   });
 
   return (
-    <div>
+    <div id="page">
       {showCart && (
-        <div>
-          <Header
-            itemsInShoppingCart={itemsInShoppingCart}
-            setShowCart={setShowCart}
-          />
+        <div id="shopping_page">
+          <div className="header">
+            <Header
+              itemsInShoppingCart={itemsInShoppingCart}
+              setShowCart={setShowCart}
+            />
+          </div>
           <div className="cardElements--div">{cardElements}</div>
+          <div className="footer">
+            <a href="/">Return to Home</a>
+          </div>
         </div>
       )}
       {!showCart && (
