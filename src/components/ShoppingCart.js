@@ -1,4 +1,5 @@
 import React from "react";
+import "../ShoppingCartCSS.css";
 
 function ShoppingCart(props) {
   const price = Object.values(props.shoppingCart).reduce(
@@ -18,7 +19,7 @@ function ShoppingCart(props) {
 
   let selectedItems = itemsArray.map((item) => {
     return (
-      <div key={item + "items"}>
+      <div key={item + "items"} className="item--div">
         <p>{item[0]}</p>
         <p>Number in Cart: {item[1]}</p>
         <p>Individual Price: {item[2]}</p>
@@ -27,7 +28,7 @@ function ShoppingCart(props) {
   });
 
   return (
-    <div>
+    <div className="shoppingCartPage">
       <button
         type="button"
         onClick={() => props.setShowCart((prevState) => !prevState)}
@@ -35,7 +36,7 @@ function ShoppingCart(props) {
         Return to Catalog
       </button>
       {selectedItems}
-      <p>Final Price: {price}</p>
+      <p className="price--p">Final Price: {price}</p>
       <div></div>
     </div>
   );
