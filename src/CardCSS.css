@@ -3,10 +3,10 @@
   flex-direction: column;
   width: 250px;
   height: 250px;
-  background-color: rgba(64, 64, 64, 0.8);
+  background-color: rgba(64, 64, 64, 0.9);
   border-radius: 25px;
   align-items: center;
-  box-shadow: 5px 5px 3px rgba(64, 64, 64, 0.8);
+  box-shadow: 5px 5px 3px rgba(64, 64, 64, 0.9);
   color: white
 }
 

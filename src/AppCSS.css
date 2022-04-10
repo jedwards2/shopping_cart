@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  background-color: rgba(64, 64, 64, 0.8);
+  background-color: rgba(64, 64, 64, 0.9);
   color: white;
   padding: 0px 25px;
   margin: 0;
@@ -36,7 +36,7 @@ body {
 }
 
 .footer {
-  background-color:rgba(64, 64, 64, 0.8);
+  background-color:rgba(64, 64, 64, 0.9);
   padding: 15px;
   display: flex;
   justify-content: center;
